@@ -5,9 +5,7 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
 import org.junit.Test
-import org.junit.jupiter.api.Assertions.*
 import teka.group.unittestingnoteapp.feature_note.data.repository.FakeNoteRepository
-import teka.group.unittestingnoteapp.feature_note.data.repository.NoteRepositoryImpl
 import teka.group.unittestingnoteapp.feature_note.domain.model.Note
 import teka.group.unittestingnoteapp.feature_note.domain.util.NoteOrder
 import teka.group.unittestingnoteapp.feature_note.domain.util.OrderType
