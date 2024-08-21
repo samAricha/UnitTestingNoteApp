@@ -14,7 +14,7 @@ import androidx.navigation.navArgument
 import teka.group.unittestingnoteapp.feature_note.presentation.add_edit_note.AddEditNoteScreen
 import teka.group.unittestingnoteapp.feature_note.presentation.notes.NotesScreen
 import teka.group.unittestingnoteapp.feature_note.presentation.util.Screen
-import teka.group.unittestingnoteapp.ui.theme.CleanArchitectureNoteAppTheme
+import teka.group.unittestingnoteapp.ui.theme.UnitTestingNoteAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            CleanArchitectureNoteAppTheme {
+            UnitTestingNoteAppTheme {
                 Surface(
                     color = MaterialTheme.colors.background
                 ) {
