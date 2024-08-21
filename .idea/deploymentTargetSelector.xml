@@ -14,6 +14,9 @@
       <SelectionState runConfigName="NotesEndToEndTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="saveNewNotes_orderByTitleDescending()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>
