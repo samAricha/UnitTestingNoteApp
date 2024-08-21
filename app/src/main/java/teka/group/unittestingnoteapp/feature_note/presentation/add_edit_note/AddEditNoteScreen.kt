@@ -27,6 +27,7 @@ import teka.group.unittestingnoteapp.feature_note.domain.model.Note
 import teka.group.unittestingnoteapp.feature_note.presentation.add_edit_note.components.TransparentHintTextField
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import teka.group.unittestingnoteapp.core.util.TestTags
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
@@ -129,7 +130,8 @@ fun AddEditNoteScreen(
                 },
                 isHintVisible = titleState.isHintVisible,
                 singleLine = true,
-                textStyle = MaterialTheme.typography.h5
+                textStyle = MaterialTheme.typography.h5,
+                testTag = TestTags.ADD_TITLE_TXT_FIELD
             )
             Spacer(modifier = Modifier.height(16.dp))
             TransparentHintTextField(
@@ -143,7 +145,8 @@ fun AddEditNoteScreen(
                 },
                 isHintVisible = contentState.isHintVisible,
                 textStyle = MaterialTheme.typography.body1,
-                modifier = Modifier.fillMaxHeight()
+                modifier = Modifier.fillMaxHeight(),
+                testTag = TestTags.ADD_CONTENT_TXT_FIELD
             )
         }
     }
